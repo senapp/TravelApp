@@ -1,0 +1,19 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+      "noEmitOnError": true,
+      "module": "commonjs",
+      "target": "es2016",
+      "downlevelIteration": true,
+      "jsx": "react",
+      "lib": ["dom", "esnext"],
+      "strictNullChecks": true,
+      "sourceMap": true,
+    },
+    "types": [
+        "hammerjs"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+  }
