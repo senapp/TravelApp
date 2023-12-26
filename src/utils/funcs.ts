@@ -5,3 +5,7 @@ export const removeElementArray = <T>(arr: T[], ele: T): void => {
         }
     }
 };
+
+export function delay(ms: number) {
+    return new Promise( resolve => setTimeout(resolve, ms) );
+}
