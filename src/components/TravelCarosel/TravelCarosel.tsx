@@ -2,8 +2,13 @@ import * as React from 'react';
 import { useEffect, useState } from 'react';
 import css from './TravelCarosel.module.css';
 import { delay } from '../../utils/funcs';
+import { Page } from '../../App';
 
-export const TravelCarosel: React.FC = () => {
+type Props = {
+    changePage(page: Page): void;
+}
+
+export const TravelCarosel: React.FC<Props> = ({ changePage }) => {
     let cards: HTMLElement[];
 
     useEffect(() => {
@@ -29,7 +34,7 @@ export const TravelCarosel: React.FC = () => {
         checkFinish();
     };
 
-    const checkFinish = async () => {
+    const checkFinish = () => {
         if (cards.length == 0) {
             document.getElementById('result')?.classList.add(css.found);
             delay(800).then(() => {
