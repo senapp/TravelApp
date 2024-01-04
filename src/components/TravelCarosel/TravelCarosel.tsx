@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import css from './TravelCarosel.module.css';
 import { delay } from '../../utils/funcs';
 import { Page } from '../../App';
+import { LoadingCircle } from '../common/LoadingCircle';
 
 type Props = {
     changePage(page: Page): void;
@@ -103,19 +104,20 @@ export const TravelCarosel: React.FC<Props> = ({ changePage }) => {
                         </div>
                         <div className={css.categoryInfo}>{"Plane: 1.5 Hours from Tokyo 10,000¥ + 1000¥ from Oita Airport"}</div>
                         <div className={css.categoryInfo}>{"Bullet train: 6 Hours from Tokyo 25,000¥"}</div>
-                        <div className={css.categoryInfo}>{"Train: 1.5 Hours from Hakata, Fukuoka 8000¥"}</div>
-                        <div className={css.categoryInfo}>{"Bus: 3 hours from Hakata, Fukuoka 3250¥"}</div>
+                        <div className={css.categoryInfo}>{"Train: 1.5 Hours from Hakata, Fukuoka 8,000¥"}</div>
+                        <div className={css.categoryInfo}>{"Bus: 3 hours from Hakata, Fukuoka 3,250¥"}</div>
                         <div className={css.categoryInfo}>{"3 Local Train stations: Beppu, Beppu Daigaku, Kamegawa"}</div>
-                        <div className={css.categoryInfo}>{"2 Local Bus lines: Oita Kotsu, Kamenoi"}</div>
+                        <div className={css.categoryInfo}>{"2 Local Buses: Oita Kotsu, Kamenoi"}</div>
                     </div>
                     <div className={css.category}>
                         <div className={css.categoryTitle}>
-                            <img src={'../resources/tips.png'}></img>Tips for Japan
+                            <img src={'../resources/tips.png'}></img>Tips for Beppu
                         </div>
-                        <div className={css.categoryInfo}>{"Make use of IC Cards to avoid handling cash. Inquire at the airport for a free travel IC card."}</div>
+                        <div className={css.categoryInfo}>{"Make use of IC Cards to avoid handling cash."}</div>
+                        <div className={css.categoryInfo}>{"Inquire at the airport for a free travel IC card."}</div>
                     </div>
                 </div>
-                <button className={css.continueButton}>Continue</button>
+                <button className={css.continueButton} onClick={() => changePage(Page.HotelFlights)}>Continue</button>
             </div>
         </div>
     );
