@@ -19,6 +19,15 @@ export const TravelCarosel: React.FC<Props> = ({ changePage }) => {
             card.style.zIndex = count.toString();
             count++;
         });
+        delay(300).then(() => {
+            (document.getElementsByClassName(css.introSub)[0] as HTMLElement).style.opacity = "1";
+        });
+
+        delay(1500).then(() => {
+            (document.getElementsByClassName(css.intro)[0] as HTMLElement).style.opacity = "0";
+            (document.getElementsByClassName(css.intro)[0] as HTMLElement).style.height = "0";
+
+        });
     })
 
     const onLike = () => {
@@ -54,6 +63,13 @@ export const TravelCarosel: React.FC<Props> = ({ changePage }) => {
 
     return (
         <div className={css.container}>
+            <div className={css.intro}>
+              <div className={css.introSub}>
+                <div className={css.introName}>Welcome Caroline!</div>
+                <div className={css.tagLine}>Let's explore together!</div>
+                <LoadingCircle></LoadingCircle>
+              </div>
+            </div>
             <div className={css.title}>Travel Carosel</div>
             <div className={css.cards}>
                 <div className={css.card}>

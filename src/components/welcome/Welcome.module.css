@@ -1,9 +1,57 @@
 .container {
     width: 100%;
     height: 100vh;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     position: relative;
     justify-content: center;
     overflow: hidden;
+}
+
+.container p {
+    color: rgb(255, 255, 255); 
+    margin-bottom: 10px; /* 適切なマージンを設定 */
+}
+
+.container p.additional-text {
+    color: green; /* Additional Textの文字の色を緑に変更 */
+    margin-bottom: 10px; /* 適切なマージンを設定 */
+}
+
+.container img {
+    margin-bottom: 15vh;
+}
+
+.button {
+    font-size: 40px;
+    padding: 25px 50px;
+    box-sizing: border-box;
+    background-color: #6a50c9;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 60%; /* ボタンの最大横幅 */
+    display: block; /* ボタンをブロック要素にする */
+    margin: 0 auto; /* 中央揃え */
+    margin-bottom: 20%; 
+}
+
+.continue-button {
+    width: 80%;
+    position: absolute;
+    bottom: 15vh;
+    height: 8vh;
+    border-radius: 5vh;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    background-color: #AB49F9;
+    font-size: 4vh;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.continue-button:active {
+    transform: scale(1.1) translate(-45%,-0%);
 }

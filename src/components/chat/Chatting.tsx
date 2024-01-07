@@ -124,7 +124,7 @@ export const Chatting: React.FC<Props> = ({ changePage }) => {
                         </div>
                     </div>
                 </div>
-                <button className={css.continueButton} onClick={() => changePage(Page.Chatting)}>Continue</button>
+                <button className={css.continueButton} onClick={() => changePage(Page.Finish)}>Continue</button>
             </div>
             <div className={css.chatScreen}>
                 <div className={css.chatHeader}>

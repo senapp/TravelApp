@@ -6,4 +6,107 @@
     position: relative;
     justify-content: center;
     overflow: hidden;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.type {
+    opacity: 0;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    transition: all 0.3s ease-in-out;
+    place-content: center;
+}
+
+.header {
+    font-size: 3vh;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.option {
+    color: white;
+    background-color: #AB49F9;
+    width: 30vh;
+    padding: 3vh;
+    font-size: 4vh;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5vh;
+    transition: all 0.3s ease-in-out;
+}
+
+.option:active {
+    transform: scale(1.1);
+}
+
+.profile {
+    opacity: 0;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    transition: all 0.3s ease-in-out;
+    place-content: center;
+}
+
+
+.text-header {
+    font-size: 3vh;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    width: 27vh;
+    margin-top: 1.5vh;
+    transition: all 0.3s ease-in-out;
+}
+
+.text-box {
+    color: white;
+    background-color: #AB49F9;
+    width: 30vh;
+    padding: 1.5vh;
+    font-size: 3vh;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 2vh;
+    transition: all 0.3s ease-in-out;
+}
+
+.yes-no {
+    width: 4vh;
+    height: 4vh;
+    color: #AB49F9;
+    align-self: self-end;
+}
+
+.continue-button {
+    width: 80%;
+    position: absolute;
+    bottom: 15vh;
+    height: 8vh;
+    border-radius: 5vh;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    background-color: #AB49F9;
+    font-size: 4vh;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.continue-button:active {
+    transform: scale(1.1) translate(-45%,-0%);
+}
+
+.toggle-container {
+    display: flex;
+}
+
+.toggle-container div {
+    width: 23vh;
 }

@@ -8,9 +8,20 @@ type Props = {
 }
 
 export const Welcome: React.FC<Props> = ({ changePage }) => {
+    const handleButtonClick = () => {
+        console.log('ボタンがクリックされました');
+        // ここにボタンがクリックされたときの処理を追加
+    };
+
     return (
         <div className={css.container}>
-            Welcome
+            <img src={'../resources/voyagenest.png'} alt="Travel App Logo" />
+            <button
+                onClick={() => changePage(Page.CreateAccount)}
+                className={css.continueButton}
+            >
+                Start
+            </button>
         </div>
     );
 };

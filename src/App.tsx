@@ -7,6 +7,7 @@ import { Account } from './components/account/Account';
 import { HotelFlights } from './components/hotelFlights/HotelFlights';
 import { Stories } from './components/stories/Stories';
 import { Chatting } from './components/chat/Chatting';
+import { Finish } from './components/finish/Finish';
 
 export enum Page {
     Welcome,
@@ -15,11 +16,12 @@ export enum Page {
     BeppuTinder,
     HotelFlights,
     Stories,
-    Chatting
+    Chatting,
+    Finish
 }
 
 export const App: React.FC = () => {
-    const [currentPage, setCurrentPage] = useState(Page.BeppuTinder);
+    const [currentPage, setCurrentPage] = useState(Page.Welcome);
     const getCurrentPage = () => {
         switch (currentPage) {
             case Page.Welcome:
@@ -36,6 +38,8 @@ export const App: React.FC = () => {
                 return <HotelFlights changePage={setCurrentPage} />;
             case Page.Chatting:
                 return <Chatting changePage={setCurrentPage} />;
+            case Page.Finish:
+                return <Finish changePage={setCurrentPage} />;
         }
     };
 
