@@ -157,3 +157,129 @@
     width: 17.86vh;
     height: 3vh;
 }
+
+.chat-screen {
+    opacity: 0;
+    background-color: black;
+    transition: all 1s ease-in-out;
+    height: 0;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    display: flex;
+    border-bottom: solid #AB49F9 0.5vh;
+    height: 10vh;
+}
+
+.go-back {
+    height: 4vh;
+    width: 4vh;
+    align-self: center;
+    margin: 0vh 2vh;
+}
+
+.profile-image {
+    height: 7vh;
+    width: 7vh;
+    object-fit: cover;
+    border-radius: 25vh;
+    align-self: center;
+}
+
+.current-name {
+    width: 10vh;
+    align-self: center;
+    font-size: 3vh;
+    margin: 0vh 2vh;
+}
+
+.call-icon {
+    height: 4vh;
+    width: 4vh;
+    align-self: center;
+    position: absolute;
+    right: 8vh;
+}
+
+.video-icon {
+    height: 4vh;
+    width: 4vh;
+    align-self: center;
+    position: absolute;
+    right: 2vh;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    padding: 3vh;
+    font-size: 2.4vh;
+    padding-top: 5vh;
+}
+
+.chat-left {
+    align-self: auto;
+    max-width: 40vh;
+    max-height: 40vh;
+    padding: 1.5vh;
+    background-color: #AB49F9;
+    border-radius: 2.5vh;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 1vh;
+}
+
+.chat-right {
+    align-self: end;
+    max-width: 40vh;
+    max-height: 40vh;
+    padding: 1.5vh;
+    background-color: #AB49F9;
+    border-radius: 2.5vh;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 1vh;
+}
+
+.time-left {
+    position: absolute;
+    transform: translate(-1vh, -4.4vh);
+    font-size: 1.9vh;
+    width: 10vh;
+}
+
+.time-right {
+    position: absolute;
+    transform: translate(-6.5vh, -4.4vh);
+    font-size: 1.9vh;
+    width: 10vh;
+}
+
+.messeage-container {
+    height: 7vh;
+    width: 42vh;
+    border-radius: 25vh;
+    background-color: #AB49F9;
+    display: flex;
+    justify-content: end;
+    align-self: center;
+    position: absolute;
+    bottom: 2vh;
+}
+
+.send-button {
+    height: 4vh;
+    width: 4vh;
+    color: white;
+    align-self: center;
+    margin-right: 2.5vh;
+}

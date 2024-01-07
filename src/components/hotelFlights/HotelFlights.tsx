@@ -12,7 +12,7 @@ type Props = {
 export const HotelFlights: React.FC<Props> = ({ changePage }) => {
     const [loaded, setLoaded] = useState(false);
 
-    delay(800).then(() => {
+    delay(600).then(() => {
         const element = (document.getElementsByClassName(css.result)[0] as HTMLElement);
         element.style.opacity = "unset";
         element.style.height = "100vh";

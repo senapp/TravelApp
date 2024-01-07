@@ -63,6 +63,7 @@
     width: 100vh;
     height: 100%;
     border-radius: 3vh;
+    object-fit: cover;
 }
 
 .card-text {
@@ -78,13 +79,14 @@
 .card h3 {
     font-size: 4vh;
     color: white;
-    text-shadow: 2px 4px 4px black;
+    text-shadow: 10px 10px 10px black, -10px 10px 10px black;
 }
 
 .card p {
     font-size: 3vh;
     color: white;
-    text-shadow: 2px 4px 4px black;
+    text-shadow: 10px 10px 10px black, -10px 10px 10px black;
+    font-weight: bold;
 }
 
 .like {
@@ -181,4 +183,26 @@
 
 .continue-button:active {
     transform: scale(1.1) translate(-45%,-0%);
+}
+
+.city-page {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.loading-page {
+    background-color: black;
+    transition: all 1s ease-in-out;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 4vh;
+    align-self: center;
+    margin-bottom: 2vh;
 }
